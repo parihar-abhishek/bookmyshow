@@ -22,7 +22,7 @@ const MoviesPage = ({title}) => {
     const fetchMovies = async () => {
       try {
         console.log("Fetching movies...");
-        const response = await fetch(   `http://www.omdbapi.com/?apikey=5573db5&s=${searchQuery || "batman"}` ); // Replace with your actual API URL
+        const response = await fetch(   `https://www.omdbapi.com/?apikey=5573db5&s=${searchQuery || "batman"}` ); // Replace with your actual API URL
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
